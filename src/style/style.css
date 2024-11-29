@@ -28,7 +28,6 @@ body{
     height: 250px;
     width: 250px;
     align-items: center;
-    
 }
 
 #card-principal h1 {
@@ -39,20 +38,24 @@ body{
     font-size: 2.5vh;
 }
 
+#p-tech{
+    font-weight: 900;
+}
+
 #introdução img{
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
 }
 
 #introdução{
     padding: 1em;
 }
 
-.carousel-container {
+.carousel-container, .card-projeto {
     width: 60%;
     overflow: hidden;
     text-align: center;
-    margin-top: 4vh;
+    margin-top: 15vh;
 }
   
 .carousel {
@@ -73,20 +76,23 @@ body{
     width: 70%;
 }
 
-#h2-exp{
+#h2-exp, #h2-titulo{
     font-size: 6vh;
     color: #ffffff;
+    text-align: center;
+    
 }
 
-#instituicao{
+#instituicao, #h3-titulo-projeto, #nome-projeto{
     font-size: 4.5vh;
+    color: #ffffff;
 }
 
 #sub-titulo{
     font-size: 3.5vh;
 }
 
-#descricao{
+#descricao, #desc-proj{
     font-size: 2.5vh;
 }
 
@@ -99,4 +105,34 @@ body{
     padding: 0.225em;
 }
 
+#h2-titulo{
+    margin-top: 15vh;
+}
+
+.projeto{
+    text-align: center;
     
+}
+
+.card-projeto{
+    background-color: #ffffff;
+    border-radius: 7em;
+    display: flex;
+    margin-top: 10px;
+}
+
+#nome-projeto{
+    color: #000000;
+}
+
+#desc-proj{
+    color: gray;
+    font-weight: 500;
+    text-align: start;
+}
+
+.card-projeto img{
+    height: 22vh;
+    width: 20vh;
+    padding: 0.625em;
+}

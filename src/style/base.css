@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Macondo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body-home, .body-juazeiro{
+    background-size: cover;
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    min-height: 250vh;
+}
+
+.body-home{
+    background-image: url('../../public/images/home/fundo-home.jpeg');
+}
+.body-juazeiro{
+    background-image: url('../../public/images/juazeiro/body_juazeiro.png');
+}
+
+.header-home,.header-juazeiro,footer{
+    background-color: #FFBD59;
+    height: 19vh;
+    width: 100%;
+    display: flex;
+    font-family: "Amatic SC", sans-serif;
+    align-items: center;
+    position: relative;
+}
+
+nav.footer-nav {
+    padding-right: 90px;
+}
+
+#logo{
+    height: 18vh;
+    margin-top: 0.312em;
+    margin-left: 1.562em;
+}
+
+nav{
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 3.125em;
+    padding: 1.775em;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: 900;
+    font-size: 7vh;
+    text-decoration: none;
+    display: flex;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s;
+    color: white;
+    font-weight: 900;
+    font-size: 4vh;
+    border: 0.120em solid white;
+    border-radius: 1.625em;
+    padding: 6px 11px;
+    margin-right: 1.125em;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    padding: 150px;
+}
+
+.title, #sub-title, #p1, #p2{
+    text-align: center;
+}
+
+#p1{
+    font-size: 4vh;
+}
+
+#sub-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 4.5vh;
+    padding: 25px;
+}
+
+.section {
+    display: flex;
+    align-items: stretch;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.section p {
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: rgba(249, 231, 206, 0.7);
+    font-weight: bold;
+    font-size: 3vh;
+    padding: 22px; 
+    border-radius: 20px;
+    text-align: center;
+}
+.section--center {
+    flex-direction: column;
+    align-items: center;
+}
+.section--center img {
+    width: 800px;
+    border-radius: 8px;
+}
+
+.personagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+.person {
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    height: auto;
+    padding: 12px;
+    border-radius: 13%;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+    display: flex; /* Adicionado para centralizar os itens dentro da cidade */
+    flex-direction: column; /* Organiza a imagem e o título em coluna */
+    align-items: center; /* Centraliza os itens */
+}
+
+.person:hover {
+    transform: scale(1.05);
+}
+
+.perso-title {
+    text-align: center;
+    color: white;
+    font-size: 3.8rem;
+}
+
+.gastronomia {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 50px ; 
+    margin: 50px auto;
+    padding: 0px;
+    max-width: 1000px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    height: 210px;
+    width: 500px;
+    background-color: #F9E7CE;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.card h3{
+    font-size: 7.5vh;
+    color: #FFBD59;
+}
+
+.card p{
+    font-size: 3.5vh;
+}
+
+.card h3, .card p{
+    text-align: start;
+}
+
+.cards img {
+    width: 200px;
+    height: 200px;
+}
+
+h2,h3{
+    font-family: "Amatic SC", sans-serif;
+}
+
+h2{
+    font-size: 8em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.eventos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 50px ; /* Ajusta o espaço entre as caixas na vertical e horizontal */
+    margin: 50px auto;
+    padding: 0px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    width: 75vh;
+    background-color: #D56A47;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.card-gastronomia h3{
+    color: #FFBD59;
+    font-size: 6vh;
+
+}
+
+.card-gastronomia p{
+    font-family: "Nunito", sans-serif;
+    font-size: 3.5vh;
+    text-align: left;
+}
+
+#img-gastro{
+    border-radius: 15%;
+    padding: 10px;
+}
+
+.cidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    height: 45vh;
+}
+
+.city {
+    width: 100%;
+    height: 45vh;
+    padding: 12px;
+    border-radius: 13%;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+    display: flex; /* Adicionado para centralizar os itens dentro da cidade */
+    flex-direction: column; /* Organiza a imagem e o título em coluna */
+    align-items: center; /* Centraliza os itens */
+}
+
+.cidades img city{
+    min-height: 350px;
+}
+
+.city:hover {
+    transform: scale(1.05);
+}
+
+.city-title {
+    text-align: center;
+    color: white;
+    font-size: 6vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* estilização dos personagens */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D56A47;
+    text-align: center;
+}
+
+#h1-prsn, #h2-prsn{
+    font-family: "Amatic SC", sans-serif;
+    color: #F1C40F;
+}
+
+#h1-prsn{
+    font-size: 12vh;
+}
+
+#h2-prsn{
+    font-size: 9vh;
+}
+
+.img_principal, .imagens img {
+    padding: 0.937em;
+    border-radius: 8%;
+}
+
+.paragrafo,.lista{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 3.5vh; 
+    color: white; 
+    width: 100%; 
+    margin-top: 3vh; 
+}
+
+ul {
+    list-style-type: disc;
+    padding: 0;
+    text-align: center; 
+    list-style-position: inside;
+    
+}
+
+ul li {
+    padding: 0.312em;
+}
+.imagens img{
+    height: 290px;
+    width: 540px;
+}
+
+
